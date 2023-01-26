@@ -13,7 +13,7 @@ main {
   grid-area: mainas;
 }
 aside {
-  display: none;
+  /* display: none; */
   grid-area: asideas;
   background: url('../img/about.jpg') no-repeat center;
   background-size: cover;
@@ -151,6 +151,6 @@ h1::after {
   }
 
   aside {
-    background: url('../img/responsive/cat-1920.jpg') no-repeat center;
+    /* background: url('../img/responsive/cat-1920.jpg') no-repeat center; */
   }
 }
