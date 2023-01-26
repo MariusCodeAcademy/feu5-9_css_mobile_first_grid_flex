@@ -149,4 +149,8 @@ h1::after {
     margin-left: auto;
     margin-right: auto;
   }
+
+  aside {
+    background: url('../img/responsive/cat-1920.jpg') no-repeat center;
+  }
 }
