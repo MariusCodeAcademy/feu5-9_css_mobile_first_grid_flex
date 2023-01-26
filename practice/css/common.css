@@ -10,7 +10,9 @@ html {
 
 p,
 li,
-a {
+a,
+td,
+th {
   font-size: 1.6rem;
 }
 
