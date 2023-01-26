@@ -1,0 +1,98 @@
+body {
+  background-color: #f4f4f4;
+}
+
+/* grid names */
+header {
+  grid-area: headeris;
+}
+.main-nav {
+  grid-area: nav;
+}
+main {
+  grid-area: mainas;
+}
+aside {
+  grid-area: asideas;
+}
+footer {
+  grid-area: footeris;
+}
+
+.element {
+  padding: 1rem 2rem;
+  background-color: white;
+  border-radius: 0.8rem;
+  margin-bottom: 1rem;
+}
+
+.main-nav {
+  background-color: #333;
+  color: white;
+}
+
+.nav__link {
+  font-size: 1.6rem;
+  padding: 0.5em 1.2em;
+  display: inline-block;
+}
+.nav__link:hover {
+  background-color: #565656;
+}
+h1::after {
+  content: ' --Mobile screen';
+}
+/* mobile rezoliucija - 360px iki 500px */
+/* tablet rezoliucija - 500px iki 768px */
+/* tablet rezoliucija - 768px iki 1000px */
+/* extra large rezoliucija - 1000px iki max */
+
+/* tablet rezoliucija - 500px iki 768px */
+@media screen and (min-width: 500px) {
+  h1::after {
+    content: ' --Tablet screen';
+  }
+  .main-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-areas:
+      'headeris headeris headeris headeris'
+      'nav nav nav nav'
+      'mainas mainas asideas asideas'
+      'footeris footeris footeris footeris';
+    gap: 2rem;
+  }
+  .element {
+    margin-bottom: 0;
+  }
+}
+
+/* laptop screen */
+@media screen and (min-width: 768px) {
+  h1::after {
+    content: ' --laptop screen';
+  }
+  .main-grid {
+    grid-template-areas:
+      'headeris headeris headeris headeris'
+      'nav mainas mainas asideas'
+      'nav footeris footeris footeris';
+  }
+
+  .nav__link {
+    display: block;
+  }
+}
+/* large screen */
+@media screen and (min-width: 1000px) {
+  h1::after {
+    content: ' --EXtra large screen';
+  }
+
+  /* padaryti kad container nesipletu daugiau nei 1000px */
+  .container {
+    max-width: 100rem;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
