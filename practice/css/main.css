@@ -1,0 +1,10 @@
+/* Header */
+
+.logo-img {
+  max-width: 15rem;
+}
+
+.nav__link {
+  display: block;
+  font-size: 2rem;
+}
