@@ -39,6 +39,42 @@ td {
   border-bottom: 1px solid #000;
 }
 
+/* Grid overlay */
+
+.img-title {
+  font-size: 3rem;
+  text-transform: uppercase;
+  font-weight: normal;
+  color: white;
+  margin-bottom: 0;
+  z-index: 1;
+}
+
+.image-grid-container {
+  display: grid;
+  place-items: center;
+}
+
+.img-card {
+  width: 100%;
+  object-fit: cover;
+}
+
+.overlay {
+  background-color: rgba(0, 0, 0, 0.187);
+  height: 100%;
+  width: 100%;
+}
+
+/* .image-grid-container .img-title,
+.image-grid-container .img-card */
+
+/* > taikosi i tiesioginius vaikinius elementus */
+.image-grid-container > * {
+  grid-column: 1 / 2;
+  grid-row: 1 / 2;
+}
+
 /* Medias */
 
 @media screen and (min-width: 800px) {
